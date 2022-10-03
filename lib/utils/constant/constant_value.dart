@@ -8,7 +8,5 @@ class ConstantValue {
 
   ///ListDashboardMenu
   static const String home = 'home';
-  static const String categories = 'categories';
-  static const String favorite = 'favorite';
   static const String profile = 'profile';
 }
