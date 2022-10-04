@@ -53,6 +53,11 @@ dependencies:
   dio: ^4.0.6
   #HttpInspector
   flutter_alice: ^1.0.2
+  #DataPresentationHelper
+  syncfusion_flutter_charts: ^20.3.47
+  syncfusion_flutter_sliders: ^20.3.47
+  syncfusion_flutter_datagrid: ^20.3.47
+
 
 dev_dependencies:
   flutter_test:
