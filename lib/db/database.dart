@@ -1,5 +1,6 @@
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:personal_expense/utils/utility.dart';
+import 'package:personal_expense/models/app_theme/app_theme_enum.dart';
+import 'package:personal_expense/utils/utils.dart';
 
 part 'box_name.dart';
 
@@ -11,10 +12,7 @@ class Database {
 
   static void registerAdapterHive() {
     logger.i('Start Register Adapter');
-    ///TODO Start Register Adapter
-    /*Hive
-      ..registerAdapter(ModelNameAdapter())
-    ;*/
+    Hive.registerAdapter(AppThemeEnumAdapter());
   }
 
   static void closeBox() {

@@ -1,7 +1,7 @@
 part of 'theme_handler_bloc.dart';
 
 class ThemeHandlerState extends Equatable {
-  final AppTheme appTheme;
+  final AppThemeEnum appTheme;
 
   const ThemeHandlerState({required this.appTheme});
 
@@ -10,6 +10,6 @@ class ThemeHandlerState extends Equatable {
 }
 
 class ThemeHandlerInitial extends ThemeHandlerState {
-  const ThemeHandlerInitial({required AppTheme appTheme})
+  const ThemeHandlerInitial({required AppThemeEnum appTheme})
       : super(appTheme: appTheme);
 }

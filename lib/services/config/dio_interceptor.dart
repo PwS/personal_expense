@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:personal_expense/utils/utility.dart';
+import 'package:personal_expense/utils/utils.dart';
 import 'package:flutter/foundation.dart';
 
 class DioInterceptor extends Interceptor {

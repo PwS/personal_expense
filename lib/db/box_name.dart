@@ -1,3 +1,5 @@
 part of 'database.dart';
 
-class BoxName {}
+class BoxName {
+  static const String themeBox = 'themeBox';
+}

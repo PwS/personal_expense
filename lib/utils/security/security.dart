@@ -2,7 +2,7 @@
 import 'dart:convert';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:todo_app/utils/utility.dart';
+import 'package:todo_app/utils/utils.dart';
 
 void secureStorage() async {
   var containsEncryptionKey = await flutterSecureStorage.containsKey(key: 'key');

@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:personal_expense/services/config/dio_interceptor.dart';
 import 'package:personal_expense/utils/constant/constant_value.dart';
-import 'package:personal_expense/utils/utility.dart';
+import 'package:personal_expense/utils/utils.dart';
 
 class DioClient {
   late Dio _dio;

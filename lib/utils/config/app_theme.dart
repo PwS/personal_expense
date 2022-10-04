@@ -1,9 +1,9 @@
-import 'package:personal_expense/utils/enum/app_theme_enum.dart';
+import 'package:personal_expense/models/app_theme/app_theme_enum.dart';
 import 'package:flutter/material.dart';
 
 class AppThemes {
   static final appThemeData = {
-    AppTheme.dark: ThemeData(
+    AppThemeEnum.dark: ThemeData(
       primarySwatch: Colors.grey,
       primaryColor: Colors.black,
       brightness: Brightness.dark,
@@ -19,7 +19,7 @@ class AppThemes {
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Colors.grey, unselectedItemColor: Colors.white),
     ),
-    AppTheme.light: ThemeData(
+    AppThemeEnum.light: ThemeData(
         primarySwatch: Colors.cyan,
         primaryColor: Colors.white,
         brightness: Brightness.light,

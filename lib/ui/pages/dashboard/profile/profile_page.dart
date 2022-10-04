@@ -1,7 +1,7 @@
 import 'package:personal_expense/state_management/theme_handler/theme_handler_bloc.dart';
 import 'package:personal_expense/ui/pages/dashboard/profile/language/language_page.dart';
 import 'package:personal_expense/utils/constant/assets_path.dart';
-import 'package:personal_expense/utils/enum/app_theme_enum.dart';
+import 'package:personal_expense/models/app_theme/app_theme_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -98,10 +98,10 @@ class SwitchTheme extends StatelessWidget {
               children: [
                 const Icon(Icons.light_mode),
                 Switch(
-                  value: state.appTheme == AppTheme.light ? false : true,
+                  value: state.appTheme == AppThemeEnum.light ? false : true,
                   onChanged: (newValue) {
                     context.read<ThemeHandlerBloc>().add(SwitchThemeEvent(
-                        newValue ? AppTheme.dark : AppTheme.light));
+                        newValue ? AppThemeEnum.dark : AppThemeEnum.light));
                   },
                 ),
                 const Icon(Icons.dark_mode),
